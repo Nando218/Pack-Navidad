@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("images/fondo.png") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+
+}
+
+
+
+header {
+    background-color: #087021;
+    border-radius: 0px 0px 150px 150px;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0.3, 0.3, 0.3);
+    text-shadow: #333 2px 2px 2px;
+}
+
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+#resetFilters {
+    background: #087021;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+
+#resetFilters:hover {
+    background-color: #087021;
+
+}
+
+
+.student-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.student-card {
+    background: linear-gradient(rgb(150, 234, 174), rgb(248, 248, 248));
+    border: 1px solid #ddd;
+    border-radius: 70px 0px 70px 0px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+
+.student-card button {
+    background: #087021;
+
+    color: #fff;
+
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.student-card button:hover {
+    background: #00cb3d;
+
+}
+
+
+.student-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.student-card:hover {
+    transform: translateY(-5px);
+}
+
+.student-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.student-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+
+
+.student-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+}
+
+.student-card button {
+    background: #5cb85c;
+
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.student-card button:hover {
+    background: #4cae4c;
+}
+
+
+form {
+    background: linear-gradient(rgb(150, 234, 174), rgb(248, 248, 248));
+
+    border: 1px solid #ddd;
+    border-radius: 50px 0px 50px 0px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+form h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #02620a;
+    border-radius: 5px;
+}
+
+form button {
+    background: #29783b;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #00cb3d;
+}
+
+
+#resetFilters:hover {
+    background: #00cb3d;
+}
+
+
+@media (max-width: 600px) {
+    .filters {
+        flex-direction: column;
+    }
+
+    .filters input,
+    .filters select {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+.student-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.imputText {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Alumnas/os</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gestión de Alumnas/os - 2º DAW</h1>
+    </header>
+
+    <main class="container">
+
+        <section class="filters">
+            <input type="text" id="searchName" placeholder="Buscar por nombre">
+            <input type="number" id="searchAge" placeholder="Buscar por edad">
+            <select id="searchCountry">
+                <option value="">Seleccionar país</option>
+                <option value="España">España</option>
+                <option value="Colombia">Colombia</option>
+
+            </select>
+            <button id="resetFilters">Resetear filtros</button>
+        </section>
+
+
+        <section>
+            <form id="studentForm">
+                <h3>Añadir/Editar Alumna/o</h3>
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" class="imputText">
+                </div>
+                <div class="form-group">
+                    <label for="surname">Apellidos</label>
+                    <input type="text" id="surname" class="imputText" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Edad</label>
+                    <input type="number" id="age" class="imputText" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">País de origen</label>
+                    <select id="country" required>
+                        <option value="">Seleccionar país</option>
+                        <option value="España">España</option>
+                        <option value="México">México</option>
+                        <option value="Colombia">Colombia</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="education">Nivel de estudios</label>
+                    <input type="text" id="education" class="imputText" required>
+                </div>
+                <button type="submit">Guardar</button>
+            </form>
+        </section>
+
+
+        <section class="student-list" id="studentList">
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
